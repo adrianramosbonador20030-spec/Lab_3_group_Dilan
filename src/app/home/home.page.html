@@ -1,0 +1,24 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Alugin mo yung Dice</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <h1 class="page-title">Paalog ng Dice</h1>
+
+    <div class="die" role="img" [attr.aria-label]="'Lumabas ang ' + x()">
+      {{ x() }}
+    </div>
+
+    <p class="roll-result">Ang lumabas ay <strong>{{ x() }}</strong></p>
+
+    <button class="roll-button" type="button" (click)="roll()">
+      Alugin mo pa
+    </button>
+
+   
+
+  </div>
+</ion-content>
